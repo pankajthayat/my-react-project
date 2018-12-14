@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p",
     "dev-server": "webpack-dev-server",
     "test": "jest"
   },
@@ -20,6 +21,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "css-loader": "^1.0.0",
+    "firebase": "^5.7.0",
     "jest": "^23.6.0",
     "live-server": "^1.2.0",
     "moment": "^2.22.2",
