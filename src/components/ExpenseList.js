@@ -23,13 +23,17 @@ import selectExpenses from "../selectors/expenses";
 // export default ExpenseList;
 //export default ConnectedExpenseList
 
-const ExpenseList=(props)=>(
+export const ExpenseList=(props)=>(
     <div>
-    <h1>ExpenseList</h1>
-    {
+   {
+       props.expenses.length===0?(
+        <p>No expense</p>
+       ):(
         props.expenses.map((expense)=>(
-        <ExpenseListItem key ={expense.id} {...expense}></ExpenseListItem>
-    ))}
+            <ExpenseListItem key ={expense.id} {...expense}></ExpenseListItem>
+        ))
+       )
+   }
     </div>
 )
 
