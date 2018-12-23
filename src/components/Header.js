@@ -1,6 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-const Header=()=>(
+export const Header=()=>(
     <header>
     <h1>Expensify</h1>
      <NavLink to="/" activeClassName="active-class" exact={true}>Go Home</NavLink>{/* link works for internal links only... if we want outsie ex:google.com  we can use link or <a>. can use any of them*/}
